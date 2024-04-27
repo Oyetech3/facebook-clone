@@ -1,0 +1,60 @@
+.all {
+    width: 100vw;
+}
+.all .allleft {
+    position: fixed;
+    margin: 70px 15px;
+    margin-right: 2%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 90vh;
+    overflow-y: hidden;
+    cursor: pointer;
+  }
+  .all .allleft:hover {
+    overflow-y: scroll;
+  }
+  .all .allleft::-webkit-scrollbar {
+    width: 9px;
+  }
+  .all .allleft::-webkit-scrollbar-track {
+    background: #ffffff78;
+  }
+  .all .allleft::-webkit-scrollbar-thumb {
+    background: rgba(128, 128, 128, 0.524);
+    border-radius: 10px;
+    cursor: auto;
+  }
+  .all .allleft > p {
+    font-size: 12px;
+    color: gray;
+    padding-left: 15px;
+  }
+  .all .allleft .im img {
+    width: 35px;
+    height: 35px;
+    object-fit: cover;
+    margin: 10px;
+  }
+  .all .allleft .im {
+    display: flex;
+    align-items: center;
+    height: 59px;
+    width: 330px;
+    margin: 1px;
+    border-radius: 10px;
+  }
+  .all .allleft .im:hover {
+    background-color: #dddddd7f;
+  }
+  .all .allleft .im img:first-child {
+    border-radius: 40px;
+  }
+  .all .allleft .im p {
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .im #las {
+    background-color: #dddddd88;
+  }

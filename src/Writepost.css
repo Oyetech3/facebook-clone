@@ -1,0 +1,173 @@
+.writeall {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.747);
+    position: absolute;
+    z-index: 3;
+}
+.writeall .writecon {
+    width: 500px;
+    height: 450px;
+    background-color: white;
+    z-index: 2;
+    margin: 150px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 1px #ddd;
+}
+.writecon .upper {
+    display: flex;
+    padding-top: 15px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+.writecon .upper h3 {
+   margin: auto;
+   padding-left: 30px;
+}
+.writecon .upper .mark {
+    margin-right: 10px;
+    background-color: #ddd;
+    width: 35px;
+    height: 35px;
+    border-radius: 40px;
+    position: relative;
+    cursor: pointer;
+}
+.writecon .upper .mark i {
+    text-align: center;
+    font-size: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: gray;
+    cursor: pointer;
+}
+.writecon .pro {
+    padding: 15px;
+}
+.writecon .pro .info {
+    display: flex;  
+    align-items: center;
+}
+.writecon .pro .info img{
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    margin-right: 10px;
+}
+
+.info .name select option img {
+    width: 10px;
+    height: 10px;
+    margin-right: 20px;
+}
+option .pub {
+    display: flex;
+}
+.writecon .inp {
+    margin-top: 10px;
+    height: 130px;
+    width: 100%;
+}
+.writecon .inp textarea {
+    width: 100%;
+    font-size: 22px;
+    padding-top: 10px;
+    height: 130px;
+    outline: 0;
+    border: 0;
+    resize: none;
+}
+.writecon .inp textarea::placeholder {
+    font-size: 21px;
+    letter-spacing: 0px;
+}
+.writecon .eff {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.writecon .eff img {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+.writecon .eff i {
+    font-size: 24px;
+    color: rgba(128, 128, 128, 0.648);
+    cursor: pointer;
+}
+.writecon .addto {
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    width: 100%;
+    height: 50px;
+    padding: 12px 15px;
+    border: 1px solid rgba(128, 128, 128, 0.447);
+    border-radius: 10px;
+    box-shadow: 0 0 2px #ddd;
+    margin: 18px 0;
+}
+.writecon .addto>p {
+    font-weight: 500;
+    font-size: 15px;
+}
+.writecon .addto .allpics {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 230px;
+}
+.addto .allpics .pic {
+    position: relative;
+    cursor: pointer;
+}
+.addto .allpics .pic p {
+    position: absolute;
+    top: -100%;
+    max-width: 180px;
+    height: 30px;
+    padding: 5px 5px;
+    border-radius: 5px;
+    display: none;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.723);
+    color: rgba(255, 255, 255, 0.883);
+    font-size: 12px;
+}
+.allpics .pic:hover p {
+    display: block;
+}
+.addto .allpics .pic img {
+    width: 25px;
+    height: 25px;
+}
+.writecon .but {
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    
+    border: 0;
+    font-weight: 600;
+    font-size: 14px;
+    border-radius: 10px;
+}
+.istrim {
+    cursor: pointer;
+    background-color: rgba(0, 0, 255, 0.773);
+    color: white;
+}
+.isnottrim{
+    background-color: #dddddd78;
+    color: rgba(128, 128, 128, 0.528);
+    cursor: no-drop;
+}
+
+@media screen and (max-width : 490px) {
+    .writeall .writecon {
+        width: 400px;
+        
+    }
+}
