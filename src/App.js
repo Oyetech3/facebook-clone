@@ -125,6 +125,7 @@ function App() {
     setMore('none')
     setGet(true)
     setknow(false)
+    setMyActive(false)
   }
   const handlePost = (e) => {
     setPost(true)
