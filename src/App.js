@@ -104,7 +104,7 @@ function App() {
   const [selectFile, setSelectFile] = useState(null)
   const [getImage, setGetImage] = useState(null)
   const [post, setPost] = useState(false)
-  const [thirdText ,setThirdText] = useState(secText)
+  
   const [flow, setFlow] = useState(false)
   const fileRef = useRef(null)
   const [more, setMore] = useState('block')
@@ -131,7 +131,7 @@ function App() {
     setPost(true)
     setSecText(text)
     setShowIt('none')
-    setThirdText('')
+    
     setText("")
     setFlow(false)
   }
@@ -388,7 +388,7 @@ const handleShowIt = () => {
 }
 const handleText = (e) => {
   setText(e.target.value)
-  setThirdText(text)
+ 
 }
   
   
@@ -577,7 +577,7 @@ const handleText = (e) => {
         <div className='mind'>
           <div className='write'>
             <img src={dp} alt=''/>
-            <input onClick={handleShowIt} value={thirdText} onChange={handleText} placeholder="What's on your mind, Mufti Abdul Qobid?"/>
+            <input onClick={handleShowIt} value={text} onChange={handleText} placeholder="What's on your mind, Mufti Abdul Qobid?"/>
           </div>
 
 

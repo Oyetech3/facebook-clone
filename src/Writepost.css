@@ -78,6 +78,7 @@ option .pub {
     outline: 0;
     border: 0;
     resize: none;
+   
 }
 .writecon .inp textarea::placeholder {
     font-size: 21px;
@@ -165,9 +166,44 @@ option .pub {
     cursor: no-drop;
 }
 
+@media screen and (max-width : 700px) {
+    .writeall .writecon {
+        margin: 60px auto;  
+    }
+    
+}
+
 @media screen and (max-width : 490px) {
     .writeall .writecon {
-        width: 400px;
+        width: 400px;  
+    }
+    .writecon .addto .allpics {
         
+        width: 30px;
+    }
+    .writecon .addto .allpics .pic:nth-child(2) {
+        display: none;
+    }
+    .writecon .addto .allpics .pic:nth-child(4) {
+        display: none;
+    }
+    .writecon .addto .allpics .pic:nth-child(3) {
+        display: none;
+    }
+    .writecon .addto .allpics .pic:nth-child(5) {
+        display: none;
+    }
+    .writecon .addto .allpics .pic:nth-child(6) {
+        display: none;
+    }
+    
+}
+@media screen and (max-width : 410px) {
+    .writeall .writecon {
+        width: 300px;  
+    }
+    .writecon .inp textarea::placeholder {
+        font-size: 18px;
+        letter-spacing: 0px;
     }
 }

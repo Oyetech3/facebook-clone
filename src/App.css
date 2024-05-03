@@ -69,6 +69,7 @@ body {
 }
 #inp:focus::placeholder {
   padding: 5px;
+  
 }
 
 .search input::placeholder {
@@ -823,7 +824,7 @@ body {
 @media screen and (max-width : 700px) {
   .main .midmain {
     width: 87.8vw;
-    left: 5.5%;
+    left: 4%;
   }
   .secondupper > div {
     left: 78%;
@@ -844,6 +845,9 @@ body {
   }
   .secondupper > div {
     left: 60%;
+  }
+  #inp:focus::placeholder{
+    padding: 2px;
   }
 }
 @media screen and (max-width : 400px) {
@@ -867,7 +871,6 @@ body {
     display: none;
   }
   .firstupper .search.isfocus .srcicon {
-    
     transition: none;
   }
 }
