@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react'
+import React, {  useRef, useState } from 'react'
 import More from './More'
 import './App.css'
 import fbicon from './images-folder/fb.png'
@@ -112,6 +112,9 @@ function App() {
   const [know, setknow ] = useState(false)
   const [get, setGet] = useState(true)
   const [myActive, setMyActive] = useState(false)
+
+ 
+
 
 
   const handleMore = () => {
@@ -356,18 +359,21 @@ function App() {
       })
     )
   }
+  
 
   const nextButton = () => {
+  
     setMove(prev => 
       prev - 20,
       setShow('visible'),
     )
-    if(move === -80) {
+    if(move === -80 ) {
       setHide('hidden')
     }
     
+  
   }
-  console.log(move)
+  
   const prevButton = () => {
     setMove(prev => 
       prev + 20,
